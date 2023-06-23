@@ -1,0 +1,14 @@
+Package: DistMatDR
+Title: Distance Matrix for the 'Deutsche Reich'
+Version: 0.0.0.9000
+Author@R: c(person("Andreas","Schönberg",email= "Schoenb8@staff.uni-marburg.de",role=c("cre","aut")),
+            person("Manuel","Oed",role=c("aut")))
+Author: Andreas Schönberg [cre,aut], Manuel Oed [aut]
+Maintainer: Andreas Schönberg <Schoenb8@staff.uni-marburg.de>
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
