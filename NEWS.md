@@ -1,3 +1,8 @@
+# DistMatDR 0.0.0.9001
+Develop version
+
+* add function "Check_GIDs"
+
 # DistMatDR 0.0.0.9000
 Init version
 
