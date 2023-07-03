@@ -7,10 +7,12 @@
 Check_GIDs(GIDs, crop = F)
 }
 \arguments{
-\item{list_of_GIDs}{numeric - an integer of GIDs}
+\item{GIDs}{numeric - an integer of GIDs}
+
+\item{crop}{boolean - If TRUE invalid GIDs are cropped}
 }
 \value{
-Retunrs a message if all GIDs are valid or which are invalid. If 'crop=TRUE' returns a vector of all valid input GIDs
+Returns a message if all GIDs are valid or which are invalid. If 'crop=TRUE' returns a vector of all valid input GIDs
 }
 \description{
 Check if input GIDs are valid

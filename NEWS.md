@@ -1,3 +1,8 @@
+# DistMatDR 0.0.0.9002
+Develop version
+
+* add function "get_traveltime". basic extraction tool for querys of max 100 GIDs
+
 # DistMatDR 0.0.0.9001
 Develop version
 
