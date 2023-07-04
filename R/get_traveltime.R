@@ -6,6 +6,12 @@
 #' @export Check_GIDs
 #' @aliases Check_GIDs
 #' @examples
+#'
+#' # get vector of GIDs
+#'
+#' gid <- sample(valid_GIDs,100)
+#' # check
+#' df<-get_traveltime(gid)
 
 get_traveltime = function(GIDs){
 
@@ -38,9 +44,3 @@ get_traveltime = function(GIDs){
   return(as_df)
 }
 
-require(jsonlite)
-# get vector of GIDs
-
-gid <- sample(valid_GIDs,100)
-# check
-df<-get_traveltime(gid)
