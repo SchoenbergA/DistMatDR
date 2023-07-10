@@ -2,7 +2,6 @@
 % Please edit documentation in R/get_traveltime.R
 \name{get_traveltime}
 \alias{get_traveltime}
-\alias{Check_GIDs}
 \title{get_traveltime}
 \usage{
 get_traveltime(GIDs)
@@ -18,10 +17,12 @@ Extract the traveltime distance matirx for a given set of GIDs
 }
 \examples{
 
-# get vector of GIDs
+# load data
+data("valid_GIDs")
 
+# get vector of random GIDs
 gid <- sample(valid_GIDs,100)
-# check
+# get traveltime distanc matrix
 df<-get_traveltime(gid)
 }
 \author{

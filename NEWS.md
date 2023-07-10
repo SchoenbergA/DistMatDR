@@ -1,3 +1,13 @@
+# DistMatDR 0.0.0.9003
+Develop version
+
+* add more examples to 'Check_GIDs'
+* add data() to "get_traveltime"
+
+* Bugfixes
+  - now uses correct alias for "get_traveltime"
+  
+
 # DistMatDR 0.0.0.9002
 Develop version
 

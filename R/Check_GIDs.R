@@ -8,11 +8,18 @@
 #' @aliases Check_GIDs
 #' @examples
 #' # get vector of GIDs
-#' gid <- c(522647, 522710, 1)
+#' gid <- c(522647, 522710)
 #' # check
 #' Check_GIDs(gid)
+#'
+#' # get vector of GIDs with invalid GID
+#' gid2 <- c(522647, 522710,1)
+#' # check
+#' Check_GIDs(gid2)
 #' # crop invalid GIDS
-#' gid_new <- Check_GIDs(gid,crop=T)
+#' gid_new <- Check_GIDs(gid2,crop=T)
+#' # check
+#' Check_GIDs(gid_new)
 #' gid_new
 
 

@@ -3,14 +3,16 @@
 #' @param GIDs  numeric - an integer of GIDs
 #' @return Returns the Distacne Matrix (traveltime on foot) for the given GIDs for both directions.
 #' @author Andreas Schönberg
-#' @export Check_GIDs
-#' @aliases Check_GIDs
+#' @export get_traveltime
+#' @aliases get_traveltime
 #' @examples
 #'
-#' # get vector of GIDs
+#' # load data
+#' data("valid_GIDs")
 #'
+#' # get vector of random GIDs
 #' gid <- sample(valid_GIDs,100)
-#' # check
+#' # get traveltime distanc matrix
 #' df<-get_traveltime(gid)
 
 get_traveltime = function(GIDs){

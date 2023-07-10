@@ -1,6 +1,6 @@
 Package: DistMatDR
 Title: Distance Matrix for the 'Deutsche Reich'
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Author@R: c(person("Andreas","Schönberg",email= "Schoenb8@staff.uni-marburg.de",role=c("cre","aut")),
             person("Manuel","Oed",role=c("aut")))
 Author: Andreas Schönberg [cre,aut], Manuel Oed [aut]
