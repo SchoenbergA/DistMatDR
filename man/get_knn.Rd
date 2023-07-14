@@ -19,7 +19,8 @@ sdf
 }
 \examples{
 # get the 5 nearest neighbours for GID 112019
-get_knn(112019,5)
+res <-get_knn(112019,5)
+res
 }
 \author{
 Andreas Schönberg

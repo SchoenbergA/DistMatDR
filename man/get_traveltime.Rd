@@ -21,9 +21,10 @@ Extract the traveltime distance matirx for a given set of GIDs
 data("valid_GIDs")
 
 # get vector of random GIDs
-gid <- sample(valid_GIDs,100)
+gids <- sample(valid_GIDs,10)
 # get traveltime distanc matrix
-df<-get_traveltime(gid)
+res<-get_traveltime(gids)
+res
 }
 \author{
 Andreas Schönberg
