@@ -1,6 +1,6 @@
 #' Check GIDs
 #' @description Check if input GIDs are valid
-#' @param GIDs  numeric - an integer of GIDs
+#' @param GIDs  numeric - a vector of GIDs
 #' @param crop boolean - If TRUE invalid GIDs are cropped
 #' @return Returns a message if all GIDs are valid or which are invalid. If 'crop=TRUE' returns a vector of all valid input GIDs
 #' @author Andreas Schönberg
@@ -8,19 +8,19 @@
 #' @aliases Check_GIDs
 #' @examples
 #' # get vector of GIDs
-#' gid <- c(522647, 522710)
+#' gids <- c(522647, 522710)
 #' # check
-#' Check_GIDs(gid)
+#' Check_GIDs(gids)
 #'
 #' # get vector of GIDs with invalid GID
-#' gid2 <- c(522647, 522710,1)
+#' gids2 <- c(522647, 522710,1)
 #' # check
-#' Check_GIDs(gid2)
+#' Check_GIDs(gids2)
 #' # crop invalid GIDS
-#' gid_new <- Check_GIDs(gid2,crop=T)
+#' gids_new <- Check_GIDs(gids2,crop=T)
 #' # check
-#' Check_GIDs(gid_new)
-#' gid_new
+#' Check_GIDs(gids_new)
+#' gids_new
 
 
 Check_GIDs <- function(GIDs,crop=F){

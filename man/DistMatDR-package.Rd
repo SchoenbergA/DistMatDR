@@ -3,7 +3,7 @@
 \docType{package}
 \name{DistMatDR - package}
 \alias{DistMatDR - package}
-\title{Distance Matrix of traveltime on foot for the 'German Reich'}
+\title{Distance Matrix of traveltime by foot for the 'German Reich'}
 \description{
 The \code{DistMatDR} package is used to get the traveltime on foot between desired GIDs in the 'German Reich'.
 }

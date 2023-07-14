@@ -1,3 +1,10 @@
+# DistMatDR 0.0.0.9004
+Develop version
+Major Update
+
+* add functions "get_DistMat", "get_knn", "get_traveltime_from_to"
+* Update variable names in "Check_GIDs"
+
 # DistMatDR 0.0.0.9003
 Develop version
 

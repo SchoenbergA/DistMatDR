@@ -11,9 +11,10 @@
 #' data("valid_GIDs")
 #'
 #' # get vector of random GIDs
-#' gid <- sample(valid_GIDs,100)
+#' gids <- sample(valid_GIDs,10)
 #' # get traveltime distanc matrix
-#' df<-get_traveltime(gid)
+#' res<-get_traveltime(gids)
+#' res
 
 get_traveltime = function(GIDs){
 
@@ -33,6 +34,10 @@ get_traveltime = function(GIDs){
   suffix = paste0(GIDs, collapse = "&gids=")
 
   query = paste0(prefix, suffix)
+  query = if (R.version$major < 4) {
+      base::url(query)
+  } else {
+      base::url(query, headers = c(Accept = "application/json, text/*, */*"))}
 
   # request query
   as_list = fromJSON(query)
