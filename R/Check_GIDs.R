@@ -26,7 +26,7 @@
 Check_GIDs <- function(GIDs,crop=F){
 
   # load list of valid GIDs
-  valid_GIDs <-DistMatDR::valid_GIDs
+  data("valid_GIDs")
 
   # check
   if(any(GIDs%in%valid_GIDs==F)){

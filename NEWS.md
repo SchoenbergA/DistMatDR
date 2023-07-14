@@ -6,7 +6,6 @@ Develop version
 
 * Bugfixes
   - now uses correct alias for "get_traveltime"
-  - loading of valid_GIDs now works
   
 
 # DistMatDR 0.0.0.9002
