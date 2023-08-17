@@ -13,6 +13,14 @@
 
 
 get_knn = function(GID, k){
+
+  ### check GIDs
+  # load list of valid GIDs
+  data("valid_GIDs")
+  # check
+  if(any(GID%in%valid_GIDs==F)){
+    stop("Invalid GID detected!")}
+
   BASE = "https://distmat.dsa.info"
   query = paste0(BASE, "/", "knn?gid=", GID, "&k=", k)
   as_list = fromJSON(query)

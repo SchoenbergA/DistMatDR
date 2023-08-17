@@ -18,6 +18,7 @@
 
 get_traveltime = function(GIDs){
 
+  ### check GIDs
   # load list of valid GIDs
   data("valid_GIDs")
 

@@ -1,3 +1,8 @@
+# DistMatDR 0.0.0.9005
+Develop version
+
+* Add check for valid GIDs to all function. Invalid GID will lead to an error.
+
 # DistMatDR 0.0.0.9004
 Develop version
 Major Update

@@ -15,6 +15,14 @@
 
 
 get_DistMat <- function(GIDs){
+
+  ### check GIDs
+  # load list of valid GIDs
+  data("valid_GIDs")
+  # check
+  if(any(GIDs%in%valid_GIDs==F)){
+    stop("Invalid GIDs detected!")}
+
   # define path
   BASE = "https://distmat.dsa.info"
 

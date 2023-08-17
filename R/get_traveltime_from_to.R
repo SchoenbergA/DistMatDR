@@ -17,6 +17,15 @@
 
 
 get_traveltime_from_to = function(GIDs_from, GIDs_to) {
+  ### check GIDs
+  # load list of valid GIDs
+  data("valid_GIDs")
+  # check
+  if(any(GIDs_from%in%valid_GIDs==F)){
+    stop("Invalid GIDs detected!")}
+  if(any(GIDs_to%in%valid_GIDs==F)){
+    stop("Invalid GIDs detected!")}
+
   BASE = "https://distmat.dsa.info"
   prefix = paste0(BASE, "/", "distance_from_to?src=")
   src_string = paste0(GIDs_from, collapse = "&src=")
